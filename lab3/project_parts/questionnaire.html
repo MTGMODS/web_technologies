@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximumscale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web technologies practice: basic HTML tags</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+</head>
+<body>
+<h1>User Questionnaire</h1>
+<form action="questionnaire.html" method="post" enctype="multipart/form-data">
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required tabindex="1"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off" required
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="2"><br><br>
+
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" placeholder="+380123456789" required
+               pattern="\+380\d{9}" tabindex="3"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required tabindex="4"><br><br>
+    </fieldset>
+
+    <!-- Login Information -->
+    <fieldset>
+        <legend>Login Information</legend>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="At least 6 characters" required
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" tabindex="5"><br><br>
+    </fieldset>
+
+    <!-- Preferences -->
+    <fieldset>
+        <legend>Preferences</legend>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" tabindex="6">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" tabindex="7">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" tabindex="8">
+        <label for="other">Other</label><br><br>
+
+        <p>Hobbies:</p>
+        <input type="checkbox" id="sports" name="hobbies" value="sports" tabindex="9">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="hobbies" value="music" tabindex="10">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="travel" name="hobbies" value="travel" tabindex="11">
+        <label for="travel">Travel</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading" tabindex="12">
+        <label for="reading">Reading</label><br><br>
+    </fieldset>
+
+    <!-- Dropdowns -->
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label for="favorite-color">Favorite Color:</label>
+        <select id="favorite-color" name="favoriteColor" tabindex="13">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green" selected>Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="black">Black</option>
+        </select><br><br>
+
+        <label for="languages">Known Languages (select multiple):</label>
+        <select id="languages" name="languages" multiple tabindex="14">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+            <option value="chinese">Chinese</option>
+            <option value="japanese">Japanese</option>
+        </select><br><br>
+
+        <label for="profession">Choose Your Profession:</label>
+        <select id="profession" name="profession" tabindex="15">
+            <optgroup label="IT">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="qa">QA</option>
+            </optgroup>
+            <optgroup label="Healthcare">
+                <option value="doctor">Doctor</option>
+                <option value="nurse">Nurse</option>
+                <option value="pharmacist">Pharmacist</option>
+            </optgroup>
+            <optgroup label="Education">
+                <option value="teacher">Teacher</option>
+                <option value="professor">Professor</option>
+                <option value="tutor">Tutor</option>
+            </optgroup>
+            <optgroup label="Engineering">
+                <option value="civil">Civil Engineer</option>
+                <option value="mechanical">Mechanical Engineer</option>
+                <option value="electrical">Electrical Engineer</option>
+            </optgroup>
+        </select><br><br>
+    </fieldset>
+
+    <!-- File Upload -->
+    <fieldset>
+        <legend>Upload Files</legend>
+        <label for="audio">Upload Audio Files:</label>
+        <input type="file" id="audio" name="audioFiles" accept="audio/*" multiple tabindex="16"><br><br>
+    </fieldset>
+
+    <!-- Submit and Reset Buttons -->
+    <fieldset>
+        <legend>Submit</legend>
+        <button type="submit" tabindex="17">Submit</button>
+        <button type="reset" tabindex="18">Reset</button>
+    </fieldset>
+</form>
+</body>
+</html>
+
+
+</body>
+<hr>
+<footer>
+    <h1 style="text-align: center"><a href="../index.html">Повернутись на головну</a></h1>
+</footer>
+</html>
