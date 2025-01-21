@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: purple;
+}
+
+.main-menu {
+    color: green;
+}
+
+
+.circle-list {
+    list-style-type: circle;
+}
+
+.square-list {
+    list-style-type: square;
+}
+
+ul ul {
+    list-style: none;
+}
+
+.square-list a.no-underline {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}

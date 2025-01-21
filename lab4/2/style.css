@@ -1,0 +1,45 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#lab-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.task-section {
+    padding: 20px;
+    border: 2px solid #ddd;
+    margin: 10px;
+}
+
+.red-text {
+    color: red;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+#italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.text-shadow {
+    text-shadow: 5px -5px 3px rgba(128, 128, 128, 0.5);
+}
+
+.instruction a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.instruction a:hover {
+    text-decoration: underline;
+}

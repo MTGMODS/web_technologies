@@ -1,0 +1,83 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff; /* Світло-блакитний фон */
+    color: #004080;
+    margin: 0;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0059b3;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #007acc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #0099e6;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+legend {
+    font-weight: bold;
+    color: #004080;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color: #0059b3;
+}
+
+fieldset > p {
+    font-weight: normal;
+    color: #004080;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b3d9ff;
+    border-radius: 4px;
+    background-color: #f0f8ff;
+    box-sizing: border-box;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    font-weight: normal;
+    color: #004080;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007acc;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0059b3;
+}

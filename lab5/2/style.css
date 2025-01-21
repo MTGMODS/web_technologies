@@ -1,0 +1,59 @@
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+    font-family: Arial, sans-serif;
+}
+
+td, th {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid transparent; /* Уникаємо впливу рамок */
+}
+
+thead th {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(70, 130, 180, 0.2);
+    color: black;
+}
+
+thead th:nth-child(2) {
+    background-color: rgba(70, 130, 180, 0.4);
+}
+
+thead th:nth-child(3) {
+    background-color: rgba(70, 130, 180, 0.6);
+}
+
+thead th:nth-child(4) {
+    background-color: rgba(70, 130, 180, 0.8);
+}
+
+thead th:nth-child(5) {
+    background-color: rgba(70, 130, 180, 1);
+    color: white;
+}
+
+tbody th {
+    padding: 15px;
+    text-align: left;
+    background-color: rgba(70, 130, 180, 0.9);
+    color: white;
+    width: 20%;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: rgba(70, 130, 180, 0.2);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(70, 130, 180, 0.3);
+}
