@@ -1,4 +1,4 @@
-{
+* {
     font-family: Arial, sans-serif;
     font-size: 20px;
     line-height: 40px;
@@ -27,7 +27,7 @@ div {
 }
 
 .text-shadow {
-    text-shadow: 5px -5px 3px rgba(128, 128, 128, 0.5); /* Ви можете змінити колір на свій вибір */
+    text-shadow: 5px -5px 3px rgba(128, 128, 128, 0.5);
 }
 
 .strikethrough {

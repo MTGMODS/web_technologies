@@ -8,7 +8,7 @@ table {
 td, th {
     padding: 15px;
     text-align: center;
-    border: 1px solid transparent; /* Уникаємо впливу рамок */
+    border: 1px solid transparent;
 }
 
 thead th {
