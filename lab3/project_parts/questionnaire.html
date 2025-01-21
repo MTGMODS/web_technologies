@@ -9,8 +9,7 @@
 </head>
 <body>
 <h1>User Questionnaire</h1>
-<form action="questionnaire.html" method="post" enctype="multipart/form-data">
-
+<form action="questionnaire.html" method="get">
     <fieldset>
         <legend>Personal Information</legend>
         <label for="name">Full Name:</label>
@@ -42,7 +41,7 @@
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female" tabindex="7">
         <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other" tabindex="8">
+        <input type="radio" id="other" name="gender" value="other" tabindex="8" checked>
         <label for="other">Other</label><br><br>
 
         <p>Hobbies:</p>
@@ -101,17 +100,26 @@
             </optgroup>
         </select><br><br>
     </fieldset>
+
     <fieldset>
         <legend>Upload Files</legend>
         <label for="audio">Upload Audio Files:</label>
-        <input type="file" id="audio" name="audioFiles" accept="audio/*" multiple tabindex="16"><br><br>
+        <input type="file" id="audio" name="audioFiles" accept="audio/*" multiple tabindex="17"><br><br>
     </fieldset>
+
     <fieldset>
-        <legend>Submit</legend>
-        <button type="submit" tabindex="17">Submit</button>
-        <button type="reset" tabindex="18">Reset</button>
+<!--        <legend>Submit (GET Method)</legend>-->
+        <button type="submit" tabindex="18">Submit</button>
+        <button type="reset" tabindex="19">Reset</button>
     </fieldset>
 </form>
+
+<!--<form action="questionnaire.html" method="post" enctype="multipart/form-data">-->
+<!--    <fieldset>-->
+<!--        <legend>Submit (POST Method)</legend>-->
+<!--        <button type="submit" tabindex="20">Submit with POST</button>-->
+<!--    </fieldset>-->
+<!--</form>-->
 
 <hr>
 <footer>
