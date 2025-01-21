@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    background: #FFA500;
+    border: 1px solid #ddd;
+    display: inline-block;
+}
+nav ul li a:hover {
+    background: #ddd;
+}
+.content {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dashed red;
+    text-align: justify;
+}
+.content img {
+    width: 200px;
+    margin: 10px 15px;
+    float: left;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.block {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+.block1 {
+    border: 4px solid green;
+    border-radius: 20px;
+}
+
+.block2 {
+    border: 4px solid green;
+    border-radius: 50px 0 0 50px;
+}
+
+.block3 {
+    border: 4px solid green;
+    border-radius: 0 50px 50px 0;
+}
+
+.block4 {
+    border: 4px solid green;
+    border-radius: 30px 10px;
+}
+
+.block5 {
+    border: 4px solid green;
+    border-radius: 10px 30px;
+}
+
+.block6 {
+    border: 4px solid green;
+    border-radius: 60px 20px 0 40px;
+}
+
+/*.block7 {*/
+/*    border: 10px solid transparent;*/
+/*    border-image: url('frame1.png') 30 round;*/
+/*}*/
+
+/*.block8 {*/
+/*    border: 10px solid transparent;*/
+/*    border-image: url('frame2.png') 30 stretch;*/
+/*}*/
+
+/*.block9 {*/
+/*    border: 10px solid transparent;*/
+/*    border-image: url('frame3.png') 30 repeat;*/
+/*}*/
+
+/*.block10 {*/
+/*    border: 10px solid transparent;*/
+/*    border-image: url('frame4.png') 30 round;*/
+/*}*/
+
+/*.block11 {*/
+/*    border: 10px solid transparent;*/
+/*    border-image: url('frame5.png') 30 stretch;*/
+/*}*/
+
+/*.block12 {*/
+/*    border: 10px solid transparent;*/
+/*    border-image: url('frame6.png') 30 repeat;*/
+/*}*/
