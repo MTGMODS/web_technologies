@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    #traffic-light {
+    width: 100px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    }
+    .light {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: #444;
+    transition: background 0.5s;
+    }
+    .light.active {
+    background-color: currentColor;
+    }
+    .red { color: red; }
+    .yellow { color: yellow; }
+    .green { color: green; }
+    </style>
+</head>
+<body>
+
+<h2>Світлофор</h2>
+<div id="traffic-light">
+  <div class="light red"></div>
+  <div class="light yellow"></div>
+  <div class="light green"></div>
+</div>
+<div id="stateText"></div>
+<button onclick="nextLight()">Наступний стан</button>
+
+<script src="traffic-light.js"></script>
+
+</body>
+</html>

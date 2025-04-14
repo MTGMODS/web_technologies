@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лампочка</title>
+  <style>
+    .lamp {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      margin: 20px auto;
+      transition: filter 0.3s;
+    }
+
+    .off {
+      filter: brightness(30%);
+    }
+
+    .on {
+      filter: brightness(100%);
+    }
+  </style>
+</head>
+<body>
+
+<h2>Лампочка</h2>
+<select id="lampType">
+  <option value="classic">Звичайна</option>
+  <option value="eco">Енергозберігаюча</option>
+  <option value="led">Світлодіодна</option>
+</select>
+<div id="lamp" class="lamp off"></div>
+<button onclick="toggleLamp()">Увімкнути / Вимкнути</button>
+<button onclick="setBrightness()">Змінити яскравість</button>
+
+<script src="lamp.js"></script>
+
+</body>
+</html>

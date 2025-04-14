@@ -1,6 +1,6 @@
 function task1() {
     let fruits = ["Яблуко", "Апельсин", "Слива"];
-    console.log("Завдання 1. Оригінал масив: ", fruits);
+    console.log("Завдання 1. Оригінал масив:", fruits);
 
     fruits.pop();
     console.log("1.1 Видалення останнього:", fruits);
@@ -11,15 +11,24 @@ function task1() {
     fruits.sort().reverse();
     console.log("1.3 Сортування:", fruits);
 
-    console.log("1.4 Індекс яблука: " + fruits.indexOf("Яблуко"));
+    console.log("1.4 Індекс яблука:", fruits.indexOf("Яблуко"));
 }
 
 function task2() {
     let colors = ["червоний", "зелений", "синій", "жовтий", "блакитний"];
     console.log("Завдання 2:", colors);
 
-    let longest = colors.reduce((a, b) => (a.length >= b.length ? a : b));
-    let shortest = colors.reduce((a, b) => (a.length <= b.length ? a : b));
+    // let longest = colors.reduce((a, b) => (a.length >= b.length ? a : b));
+    // let shortest = colors.reduce((a, b) => (a.length <= b.length ? a : b));
+
+    let longest = colors[0];
+    let shortest = colors[0];
+
+    for (let color of colors) {
+        if (color.length > longest.length) longest = color;
+        if (color.length < shortest.length) shortest = color;
+    }
+
     console.log("Завдання 2.2: Найдовший колір:", longest);
     console.log("Завдання 2.2: Найкоротший колір:", shortest);
 

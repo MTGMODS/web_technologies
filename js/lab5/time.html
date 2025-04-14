@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Цифровий годинник</h2>
+<div id="clock"></div>
+
+<h2>Таймер зворотного відліку</h2>
+<input type="datetime-local" id="countdownTarget">
+<button onclick="startCountdown()">Почати</button>
+<div id="countdown"></div>
+
+<h2>Календар</h2>
+<input type="month" id="calendarInput">
+<div id="calendar"></div>
+
+<h2>День народження</h2>
+<input type="date" id="birthday">
+<button onclick="calcUntilBirthday()">Розрахувати</button>
+<div id="birthdayCountdown"></div>
+
+<script src="time.js"></script>
+
+</body>
+</html>
