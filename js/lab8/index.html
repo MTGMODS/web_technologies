@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>ЛР9 | Авторизація / Реєстрація</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="tab-buttons">
+    <button onclick="loadForm('login.html')">Авторизація</button>
+    <button onclick="loadForm('signup.html')">Реєстрація</button>
+</div>
+<iframe id="form-frame" src="login.html"></iframe>
+
+<script>
+    function loadForm(page) {
+        document.getElementById('form-frame').src = page;
+    }
+</script>
+</body>
+</html>

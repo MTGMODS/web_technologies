@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<form id="signupForm" novalidate>
+    <h2>Реєстрація</h2>
+
+    <label>
+        Ім’я:
+        <input type="text" name="firstName" id="firstName" required>
+        <span class="error-message" id="firstNameError"></span>
+    </label>
+
+    <label>
+        Прізвище:
+        <input type="text" name="lastName" id="lastName" required>
+        <span class="error-message" id="lastNameError"></span>
+    </label>
+
+    <label>
+        Email:
+        <input type="email" name="email" id="email" required>
+        <span class="error-message" id="emailError"></span>
+    </label>
+
+    <label>
+        Пароль:
+        <input type="password" name="password" id="password" required>
+        <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+        <span class="error-message" id="passwordError"></span>
+    </label>
+
+    <label>
+        Підтвердження паролю:
+        <input type="password" name="confirmPassword" id="confirmPassword" required>
+        <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</span>
+        <span class="error-message" id="confirmPasswordError"></span>
+    </label>
+
+    <label>
+        Телефон:
+        <input type="tel" name="phone" id="phone" placeholder="+380..." required>
+        <span class="error-message" id="phoneError"></span>
+    </label>
+
+    <label>
+        Дата народження:
+        <input type="date" name="birthDate" id="birthDate" required>
+        <span class="error-message" id="birthDateError"></span>
+    </label>
+
+    <label>
+        Стать:
+        <select name="sex" id="sex" required>
+            <option value="">Оберіть</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+        </select>
+        <span class="error-message" id="sexError"></span>
+    </label>
+
+    <label>
+        Країна:
+        <select name="country" id="country" required>
+            <option value="">Оберіть країну</option>
+            <option value="ua">Україна</option>
+            <option value="pl">Польща</option>
+        </select>
+        <span class="error-message" id="countryError"></span>
+    </label>
+
+    <label>
+        Місто:
+        <select name="city" id="city" disabled required>
+            <option value="">Оберіть місто</option>
+        </select>
+        <span class="error-message" id="cityError"></span>
+    </label>
+
+    <button type="submit">Зареєструватись</button>
+    <div class="form-message" id="signupMessage"></div>
+</form>
+
+<script src="js/script.js"></script>
+</body>
+</html>

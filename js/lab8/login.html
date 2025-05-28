@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<form id="loginForm" novalidate>
+    <h2>Авторизація</h2>
+
+    <label>Ім’я користувача:
+        <input type="text" id="loginUsername" required>
+        <span class="error-message" id="loginUsernameError"></span>
+    </label>
+
+    <label>Пароль:
+        <input type="password" id="loginPassword" required minlength="6">
+        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+        <span class="error-message" id="loginPasswordError"></span>
+    </label>
+
+    <label class="checkbox-label">
+        <input type="checkbox" id="rememberMe"> Запам’ятати мене
+    </label>
+
+    <button type="submit">Увійти</button>
+    <div class="form-message" id="loginMessage"></div>
+</form>
+
+<script src="js/script.js"></script>
+</body>
+</html>
