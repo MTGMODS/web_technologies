@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 32px;
+        }
+
+        .works {
+            padding: 40px 0;
+        }
+
+        .works-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .work-item {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .work-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .services {
+            background-color: #f9f9f9;
+            padding: 40px 0;
+        }
+
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-item {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .journal {
+            padding: 40px 0;
+        }
+
+        .journal-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .journal-item {
+            flex: 1;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .journal-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .journal-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <div class="logo">FlexBox Site</div>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Ласкаво просимо на наш сайт</h1>
+        <p>Ми створюємо чудові сайти з використанням сучасних технологій</p>
+    </div>
+</section>
+
+<section class="works">
+    <div class="container">
+        <h2 class="section-title">Our awesome works</h2>
+        <div class="works-grid">
+            <div class="work-item">
+                <img src="https://via.placeholder.com/350x200" alt="Work 1">
+                <h3>Проект 1</h3>
+                <p>Короткий опис проекту</p>
+            </div>
+            <div class="work-item">
+                <img src="https://via.placeholder.com/350x200" alt="Work 2">
+                <h3>Проект 2</h3>
+                <p>Короткий опис проекту</p>
+            </div>
+            <div class="work-item">
+                <img src="https://via.placeholder.com/350x200" alt="Work 3">
+                <h3>Проект 3</h3>
+                <p>Короткий опис проекту</p>
+            </div>
+            <div class="work-item">
+                <img src="https://via.placeholder.com/350x200" alt="Work 4">
+                <h3>Проект 4</h3>
+                <p>Короткий опис проекту</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">What do we do</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Веб-розробка</h3>
+                <p>Професійна розробка сайтів будь-якої складності з використанням сучасних технологій.</p>
+            </div>
+            <div class="service-item">
+                <h3>Дизайн</h3>
+                <p>Створення унікального дизайну, який підкреслить індивідуальність вашого бренду.</p>
+            </div>
+            <div class="service-item">
+                <h3>SEO</h3>
+                <p>Оптимізація сайтів для пошукових систем, що дозволить залучити більше клієнтів.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="journal">
+    <div class="container">
+        <h2 class="section-title">From the journal</h2>
+        <div class="journal-grid">
+            <div class="journal-item">
+                <img src="https://via.placeholder.com/350x200" alt="Journal 1">
+                <div class="journal-content">
+                    <h3>Новини компанії</h3>
+                    <p>Останні події та новини нашої компанії. Що нового ми запровадили.</p>
+                </div>
+            </div>
+            <div class="journal-item">
+                <img src="https://via.placeholder.com/350x200" alt="Journal 2">
+                <div class="journal-content">
+                    <h3>Технології майбутнього</h3>
+                    <p>Огляд нових технологій у веб-розробці, які ми вже використовуємо.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 FlexBox Site. Усі права захищені.</p>
+    </div>
+</footer>
+</body>
+</html>
